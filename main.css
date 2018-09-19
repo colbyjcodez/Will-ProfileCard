@@ -1,5 +1,57 @@
-div{
-    background: blue;
-    height: 200px;
-    width: 30px;
+
+h1,h2,p{
+    text-align: center;
+ }
+
+/* grey background behind img */
+.all {
+    background: rgb(190, 190, 190);
+    background: linear-gradient(to right bottom, grey, whitesmoke);
+  
+}
+
+/* styling for the unordered list, no bullets etc.*/
+
+ul{
+    list-style-type: none;
+    display: flex;
+   
+
+} 
+
+/* social media icons  */
+
+li img {
+    width: 100px; 
+    margin: 0 auto;  
+    display: block;
+  
+
+}
+
+/* size of the icons*/
+
+.BG{
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    
+}
+
+li{
+    background-color: darkgrey;
+    border-radius: 40%;
+    margin: 0 auto;
+    display: block;
+    padding: 4px;
+    border: 10px;
+  
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+
+
+
 }
