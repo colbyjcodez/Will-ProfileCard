@@ -1,50 +1,53 @@
 
 h1,h2,p{
     text-align: center;
+    font-family: Helvetica, 
+    
  }
 
 /* grey background behind img */
 .all {
-    background:lightblue;
-    
+    background: lightblue linear-gradient(grey, lightblue);
+    margin: 0 auto;
+  
 }
 
 /* styling for the unordered list, no bullets etc.*/
 
 ul{
     list-style-type: none;
-    display: flex;
-   
+    display: flex;   
 
 } 
 
 /* social media icons  */
 
 li img {
-    width: 100px; 
+    width: 80px; 
     margin: 20px;  
     display: block;
-    background: orange;
+    background:linear-gradient( dark grey, black);
     color: black;
     border-radius: 100%;
     cursor: pointer;
     transition: 1.2s ease-in;
+    position: relative;
 
 }
 
 img:hover{
     background: green;
     transform: rotate(360deg);
+ 
     
 }
 /* size of the icons*/
 
 li{
-    box-shadow: black;
-    border-radius: 40%;
-    margin: 0 auto;
+    box-shadow: 6px 0px 8px grey;
+    border-radius: 80%;
     display: block;
-    padding: 1px;
+  
  
 }
 
@@ -53,16 +56,24 @@ li{
     justify-content: space-between;
     
 }
+
 .BG{
     margin: 0 auto;
     display: block;
     border-radius: 50%;
-    position: relative;
-    background: orange;
-    color: black;
+    background: red;
+    box-shadow: 8px 4px 2px grey;
     border-radius: 100%;
     padding: 8px;
     cursor: pointer;
     transition: 1.2s ease-in;
+    animation-name: img;
+    animation-duration: 4s;
     
+    
+}@keyframes img {
+    from {background-color: red;}
+    to {background-color: blue;}
 }
+
+
