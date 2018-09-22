@@ -1,8 +1,16 @@
 
 h1,h2,p{
     text-align: center;
-    font-family: Helvetica, 
-    
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 32px;
+    width: 400px;
+    border: white;
+    padding: 25px;
+    margin: 0 auto;
+    box-shadow: 6px 0px 8px grey;
+    position: relative;
+
+
  }
 
 /* grey background behind img */
@@ -25,19 +33,20 @@ ul{
 li img {
     width: 80px; 
     margin: 20px;  
-    display: block;
     background:linear-gradient( dark grey, black);
     color: black;
     border-radius: 100%;
     cursor: pointer;
     transition: 1.2s ease-in;
     position: relative;
+   
 
 }
 
 img:hover{
-    background: green;
+    background: rgb(0, 132, 255);
     transform: rotate(360deg);
+
  
     
 }
@@ -46,7 +55,7 @@ img:hover{
 li{
     box-shadow: 6px 0px 8px grey;
     border-radius: 80%;
-    display: block;
+    
   
  
 }
@@ -62,18 +71,68 @@ li{
     display: block;
     border-radius: 50%;
     background: red;
-    box-shadow: 8px 4px 2px grey;
+    box-shadow: 6px 8px 4px rgba(13, 219, 255, 0.28);
     border-radius: 100%;
     padding: 8px;
     cursor: pointer;
     transition: 1.2s ease-in;
     animation-name: img;
     animation-duration: 4s;
+
+}
+
+p:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    box-shadow: 6px 8px 4px rgba(13, 219, 255, 0.28);
+
     
-    
+}
+      
+
+h2:hover{
+    animation: shake .45s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    color: white;
+    box-shadow: 6px 8px 4px rgba(13, 219, 255, 0.28);
+
+
+}
+
+@media screen {(max-width: 600px)
+
+}
+
+
+
 }@keyframes img {
     from {background-color: red;}
     to {background-color: blue;}
 }
 
 
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+    
+    @media screen {
+        
+    }
+    
